@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-favorites"
+version = "0.1.0"
+description = ""
+authors = ["Davies <daviesaraujo@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "python_favorites"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.12.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+ipython = "^8.16.1"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.4.6"
+mkdocstrings = "^0.23.0"
+mkdocstrings-python = "^1.7.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
