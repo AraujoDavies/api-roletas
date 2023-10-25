@@ -1,0 +1,15 @@
+site_name: DOC API ROLETA
+repo_url: https://github.com/AraujoDavies/api-roletas
+repo_name: AraujoDavies/api-roletas
+
+theme:
+  name: material
+  language: pt-br
+  logo: assets/roleta.png
+  favicon: assets/roleta.png
+
+markdown_extensions: 
+  - attr_list # para conseguir usar {} na imagem do index.md
+
+extra_css:
+  - stylesheets/extra.css

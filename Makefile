@@ -17,7 +17,7 @@ start: ## cria ambiente virtual com poetry e instala bibliotecas de dev
 	poetry add --group doc mkdocs-material
 	poetry add --group doc mkdocstrings
 	poetry add --group doc mkdocstrings-python
-	mkdir docs
+	poetry run mkdocs new .
 	mkdir code
 	echo "" > code/__init__.py
 
