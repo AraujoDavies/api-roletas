@@ -2,4 +2,6 @@
 
 2° Criar ambiente -> make start
 
-3° Configurar ambiente
+3° Configurar ambiente -> configuracao do mkdocs, pytest, isort e blue
+
+4° Codar, testar e documentar

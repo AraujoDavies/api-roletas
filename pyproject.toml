@@ -8,6 +8,7 @@ packages = [{include = "api_roleta"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+splinter = "^0.19.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -22,6 +23,15 @@ ipython = "^8.16.1"
 mkdocs-material = "^9.4.6"
 mkdocstrings = "^0.23.0"
 mkdocstrings-python = "^1.7.3"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+# rodar testes comentados
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
 
 [build-system]
 requires = ["poetry-core"]
