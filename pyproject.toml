@@ -9,6 +9,8 @@ packages = [{include = "api_roleta"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 splinter = "^0.19.0"
+webdriver-manager = "^4.0.1"
+selenium = "4.9.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -25,7 +27,7 @@ mkdocstrings = "^0.23.0"
 mkdocstrings-python = "^1.7.3"
 
 [tool.pytest.ini_options]
-pythonpath = "."
+pythonpath = [".", "code"]
 # rodar testes comentados
 addopts = "--doctest-modules"
 

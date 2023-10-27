@@ -33,6 +33,7 @@ dev: ## Start Container em modo iterativo
 
 .PHONY: git
 git: ## MSG - Sobe codigo pro GIT (Necessario usar variavel)
+	@make format
 	@make test
 	git add -A
 	git commit -m "${MSG}"
@@ -40,7 +41,6 @@ git: ## MSG - Sobe codigo pro GIT (Necessario usar variavel)
 
 .PHONY: test
 test:
-	@make format
 	poetry run pytest . -s -x --cov=code -vv
 	poetry run coverage html
 
