@@ -1,6 +1,13 @@
-from raspar_e_tratar_dados_da_bet import chrome_browser
+from code.raspar_e_tratar_dados_da_bet import (
+    chrome_browser,
+    raspar_dados_da_bet,
+    tratar_dados,
+)
+from time import sleep
 
-# l = chrome_browser('local') # splinter.driver.webdriver.chrome.WebDriver
-# r = chrome_browser('remoto') # splinter.driver.webdriver.remote.WebDriver
-# er = chrome_browser('rremoto') # bool
-# 'splinter.driver.webdriver.remote.WebDriver' in str(r)
+if __name__ == '__main__':
+    driver = chrome_browser()
+
+    soup = raspar_dados_da_bet(driver=driver)
+    if soup != 'TIMEOUT':
+        dados = tratar_dados(soup=soup)

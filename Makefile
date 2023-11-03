@@ -24,8 +24,8 @@ start: ## cria ambiente virtual com poetry e instala bibliotecas de dev
 
 .PHONY: format
 format: ## formata o script e ordena os imports
-	poetry run blue --check --diff .
-	poetry run isort --check --diff .
+	poetry run blue .
+	poetry run isort .
 
 .PHONY: dev
 dev: ## Start Container em modo iterativo
